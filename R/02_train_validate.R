@@ -1,7 +1,5 @@
-# ============================================
 # R/02_train_validate.R
 # Train + validate with SCR hold-out test set
-# ============================================
 
 suppressPackageStartupMessages({
   library(readxl)
