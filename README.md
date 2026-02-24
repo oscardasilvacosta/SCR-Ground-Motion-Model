@@ -2,7 +2,7 @@ XGBoost Ground Motion Model for RotD100 Peak Ground Acceleration in Stable Conti
 
 This repository contains the complete machine learning framework used to develop an XGBoost-based ground motion model for the prediction of RotD100 peak ground acceleration (PGA) in Stable Continental Regions (SCRs).
 
-The model integrates ground motion records from the European Strong Motion (ESM) database (https://esm-db.eu/#/products/flat_file) with additional publicly available site and tectonic metadata. The workflow includes feature engineering, cross-validation, model selection, full-database training, and SHAP-based interpretability analysis.
+The model integrates ground motion records from the European Strong Motion (ESM) database (https://doi.org/10.13127/esm/flatfile.1.0) with additional publicly available site and tectonic metadata. The workflow includes feature engineering, cross-validation, model selection, full-database training, and SHAP-based interpretability analysis.
 
 Repository Structure
 
@@ -28,7 +28,7 @@ Directory for generated prediction outputs
 
 Data Availability
 
-Ground motion records were obtained from the European Strong Motion (ESM) database (https://esm-db.eu/#/products/flat_file). Additional open-source site and tectonic parameters were integrated during preprocessing.
+Ground motion records were obtained from the European Strong Motion (ESM) database (https://doi.org/10.13127/esm/flatfile.1.0). Additional open-source site and tectonic parameters were integrated during preprocessing.
 
 Due to redistribution restrictions of the source databases, the compiled training dataset is not included in this repository.
 
