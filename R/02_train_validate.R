@@ -81,7 +81,7 @@ cat("Non-SCR recordings:", nrow(non_scr_data), "\n")
 stopifnot(nrow(scr_data) > 10)  # basic sanity
 
 # ----------------------------
-# 4) Stratified SCR split (70/30) by target
+# 4) Stratified SCR split (70/30)
 # ----------------------------
 scr_train_index <- createDataPartition(scr_data$rotD100_pga_g, p = 0.7, list = FALSE)
 scr_train <- scr_data[scr_train_index, ]
@@ -114,7 +114,7 @@ xgb_grid <- expand.grid(
 )
 
 # ----------------------------
-# 6) Train model (CV on training set)
+# 6) Train model
 # ----------------------------
 xgb_model <- train(
   model_formula,
@@ -244,7 +244,7 @@ write_xlsx(xgb_varimp, file.path(outputs_dir, "xgb_variable_importance.xlsx"))
 saveRDS(xgb_model, file = file.path(models_dir, "xgb_model_train_validate.rds"))
 
 # ----------------------------
-# 12) SHAP summary (quick default)
+# 12) SHAP summary 
 # ----------------------------
 train_matrix <- model.matrix(
   ~ Mw + event_depth_km + hypocentral_distance_km + azimuth_cos + event_latitude + event_longitude +
