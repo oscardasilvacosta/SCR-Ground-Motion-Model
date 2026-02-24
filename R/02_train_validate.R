@@ -104,7 +104,7 @@ model_formula <- rotD100_pga_g ~ Mw + event_depth_km + hypocentral_distance_km +
 
 control <- trainControl(method = "cv", number = 5)
 
-# Single fixed hyperparameter set (not a search grid)
+# Fixed hyperparameters selected from prior tuning
 xgb_grid <- expand.grid(
   nrounds = 1200,
   max_depth = 14,
