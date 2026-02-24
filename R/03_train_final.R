@@ -1,7 +1,5 @@
-# ============================================
 # R/03_train_final.R
 # Final model trained on full database (no CV)
-# ============================================
 
 suppressPackageStartupMessages({
   library(readxl)
@@ -88,7 +86,7 @@ model_formula <- rotD100_pga_g ~ Mw + event_depth_km + hypocentral_distance_km +
   station_latitude + station_longitude + vs30_div_epi
 
 # ----------------------------
-# 4) Train final model (no CV)
+# 4) Train final model 
 # ----------------------------
 final_model <- train(
   model_formula,
@@ -110,7 +108,7 @@ ins_r2   <- R2(pred_train,   final_data$rotD100_pga_g)
 cat(sprintf("In-sample: RMSE=%.4f  MAE=%.4f  R2=%.4f\n", ins_rmse, ins_mae, ins_r2))
 
 # ----------------------------
-# 5) Variable importance (publication style)
+# 5) Variable importance
 # ----------------------------
 pretty_names <- c(
   station_latitude        = "Station Latitude",
@@ -148,7 +146,7 @@ ggsave(file.path(outputs_dir, "final_varimp.png"),
 write_xlsx(xgb_varimp, file.path(outputs_dir, "final_varimp.xlsx"))
 
 # ----------------------------
-# 6) SHAP summary (uses SAME preprocessing as caret)
+# 6) SHAP summary 
 # ----------------------------
 pred_vars <- c(
   "Mw", "event_depth_km", "hypocentral_distance_km",
