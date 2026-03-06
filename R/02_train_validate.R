@@ -1,5 +1,5 @@
 # R/02_train_validate.R
-# Train + validate with SCR hold-out test set
+# Train + validate with SCR validation set
 
 suppressPackageStartupMessages({
   library(readxl)
@@ -126,7 +126,7 @@ xgb_model <- train(
 )
 
 # ----------------------------
-# 7) Evaluate on SCR test set
+# 7) Evaluate on SCR validation set
 # ----------------------------
 xgb_pred_scr <- predict(xgb_model, newdata = test_data)
 
@@ -134,10 +134,10 @@ scr_rmse <- RMSE(xgb_pred_scr, test_data$rotD100_pga_g)
 scr_mae  <- MAE(xgb_pred_scr,  test_data$rotD100_pga_g)
 scr_r2   <- R2(xgb_pred_scr,   test_data$rotD100_pga_g)
 
-cat("\nPerformance on SCR hold-out test set:\n")
+cat("\nPerformance on SCR validation set:\n")
 print(data.frame(Dataset = "SCR Test Set", RMSE = scr_rmse, MAE = scr_mae, R2 = scr_r2))
 
-# Compare caret CV vs test
+# Compare caret CV vs validation
 best <- xgb_model$bestTune
 cv_row <- dplyr::inner_join(xgb_model$results, best, by = names(best)) %>% dplyr::slice(1)
 
@@ -146,13 +146,13 @@ comparison_results <- rbind(
   data.frame(Dataset = "SCR Test Set", RMSE = scr_rmse, MAE = scr_mae, R2 = scr_r2)
 )
 
-cat("\nCV vs Test comparison:\n")
+cat("\nCV vs validation comparison:\n")
 print(comparison_results)
 
 write_xlsx(comparison_results, file.path(outputs_dir, "cv_vs_scr_test.xlsx"))
 
 # ----------------------------
-# 8) Bootstrap CIs on SCR test set
+# 8) Bootstrap CIs on SCR validation set
 # ----------------------------
 bootstrap_eval <- function(data, model, n = 1000){
   rmse_vals <- numeric(n)
@@ -182,7 +182,7 @@ boot_summary <- data.frame(
 )
 
 print(boot_summary)
-write_xlsx(boot_summary, file.path(outputs_dir, "scr_test_bootstrap_summary.xlsx"))
+write_xlsx(boot_summary, file.path(outputs_dir, "scr_validation_bootstrap_summary.xlsx"))
 
 plot_boot <- function(vals, metric, filename){
   dfp <- data.frame(val = vals)
@@ -210,14 +210,14 @@ p_pred_vs_real <- ggplot(results_df, aes(x = rotD100_pga_g, y = Predicted_rotD10
   geom_point(alpha = 0.7) +
   geom_abline(intercept = 0, slope = 1, linetype = "dashed") +
   theme_minimal() +
-  labs(title = "Predicted vs. Real RotD100 PGA (SCR Test Set)",
+  labs(title = "Predicted vs. Real RotD100 PGA (SCR validation Set)",
        x = "Real RotD100 PGA (g)",
        y = "Predicted RotD100 PGA (g)")
 
-ggsave(file.path(outputs_dir, "pred_vs_real_scr_test.png"),
+ggsave(file.path(outputs_dir, "pred_vs_real_scr_validation.png"),
        plot = p_pred_vs_real, width = 8, height = 6, dpi = 300)
 
-write_xlsx(results_df, file.path(outputs_dir, "pred_vs_real_scr_test.xlsx"))
+write_xlsx(results_df, file.path(outputs_dir, "pred_vs_real_scr_validation.xlsx"))
 
 # ----------------------------
 # 10) Variable importance
