@@ -19,9 +19,12 @@ separate. `asset_provenance.json` records copied asset sources and checksums;
 - `real_recordings_station_predictions.csv`: ten previously inspected station cases, their supplied observed PGA and separate model estimates.
 - `real_recordings_available_and_common_subset_metrics.csv`: all-available and common-nine station errors, never silently interchanged.
 
-Primary SCR event-cluster 95% bootstrap intervals are R2_SSE 0.6717-0.8804,
+Primary SCR event-cluster 95% bootstrap intervals are R2 0.6743-0.8823,
 MAE 0.8695-1.3416 %g, RMSE 2.5430-4.1453 %g. These are conditional on the fixed
 model and reused validation recordings, not full model-development uncertainty.
+Here R2 is squared Pearson correlation. For the separate mixed recording-level
+validation, the corresponding event-cluster 95% interval for R2 is
+0.5764-0.7869.
 
 ## Scenarios
 

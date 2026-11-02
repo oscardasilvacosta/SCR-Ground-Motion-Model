@@ -77,12 +77,14 @@ classification, not the label text alone.
 The evaluation fit uses 8,236 training records, with 1,343 SCR recordings
 reserved for development validation. The final deployment fit uses all records.
 
-| Assessment | Predictive R2 (1-SSE/SST) | Pearson r-squared | MAE (%g) | RMSE (%g) |
-| --- | ---: | ---: | ---: | ---: |
-| SCR recording-level validation, n=1,343 | 0.8012 | 0.8013 | 1.0759 | 3.3046 |
-| Separate mixed recording-level validation, n=2,872 | 0.7016 | 0.7017 | 1.0074 | 3.2929 |
-| Strict whole-event holdout, mean of 50 repetitions | 0.2968 | 0.4087 | 2.8468 | 5.9416 |
-| SCR event holdout, non-SCR records retained, mean of 50 repetitions | 0.5118 | 0.5399 | 1.8527 | 5.0293 |
+| Assessment | R2 | MAE (%g) | RMSE (%g) |
+| --- | ---: | ---: | ---: |
+| SCR recording-level validation, n=1,343 | 0.8013 | 1.0759 | 3.3046 |
+| Separate mixed recording-level validation, n=2,872 | 0.7017 | 1.0074 | 3.2929 |
+| Strict whole-event holdout, mean of 50 repetitions | 0.4087 | 2.8468 | 5.9416 |
+| SCR event holdout, non-SCR records retained, mean of 50 repetitions | 0.5399 | 1.8527 | 5.0293 |
+
+R2 denotes the squared Pearson correlation between observed and predicted PGA.
 
 **These protocols are not interchangeable.** The recording-level SCR subset
 was inspected during configuration selection and is not event-disjoint or an
@@ -140,10 +142,12 @@ Scenario H (Mw 8.7) is outside the observed training magnitude range, 4.5-7.8.
 Good agreement in empirical binned trends does not establish universal physical
 scaling or prediction uncertainty.
 
-The older [Zenodo archive, DOI 10.5281/zenodo.18756043](https://doi.org/10.5281/zenodo.18756043),
-was linked to XGB2.2G. **This GitHub update does not update that Zenodo record**
-and does not assert that it contains XGB2.9G. A corresponding new archive
-version must be published separately before claiming a version-specific DOI.
+The associated [model archive is maintained on Zenodo](https://zenodo.org/records/18756043).
+Its XGB2.9G upload is being prepared separately. An archive README describing
+the revised model is available in [zenodo/README.txt](zenodo/README.txt).
+Check the published file names and version when downloading a model; the
+XGB2.9G deployment file is `XGB2.9G_FULL_DB.rds`. Citation metadata can be
+updated with the revised archive's version-specific DOI after publication.
 
 The [MIT licence](LICENSE) applies to source code and software documentation.
 It does not grant redistribution rights for third-party ESM or geospatial data.

@@ -12,3 +12,4 @@
 - Kept restricted ESM records out of the public tree and clarified conditional retraining reproducibility.
 - Retained MIT for source code; distinguished third-party data rights.
 - Clarified that the old XGB2.2G Zenodo record was not updated by this change.
+- Simplified reader-facing performance tables to Pearson R2 and prepared an XGB2.9G archive README for the upcoming Zenodo upload.
