@@ -98,7 +98,6 @@ MAE and RMSE are expressed in percent-g percentage points.
 
 Assessment                                      R2       MAE (%g)  RMSE (%g)
 SCR recording-level validation (1,343 records)    0.8013   1.0759    3.3046
-Mixed recording-level validation (2,872 records)  0.7017   1.0074    3.2929
 Strict event holdout, mean of 50 repetitions     0.4087   2.8468    5.9416
 SCR event holdout, non-SCR retained, mean of 50   0.5399   1.8527    5.0293
 
