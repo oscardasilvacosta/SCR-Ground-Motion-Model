@@ -1,0 +1,24 @@
+{
+  "FULL_DB": {
+    "n_private_rows_checked": 9579,
+    "prediction_max_difference_pctg": 0,
+    "training_rows_removed": true,
+    "callbacks_removed": true,
+    "local_paths_and_fit_indices_removed": true,
+    "original_md5": "05804b27e3df2be2deb865a762c6f46e",
+    "published_md5": "0047efd417d2073e2440fd297753f88f",
+    "original_size_bytes": 48029081,
+    "published_size_bytes": 23832739
+  },
+  "EVALUATION": {
+    "n_private_rows_checked": 9579,
+    "prediction_max_difference_pctg": 0,
+    "training_rows_removed": true,
+    "callbacks_removed": true,
+    "local_paths_and_fit_indices_removed": true,
+    "original_md5": "432057aa86b3b684d8c4e57732c6fba7",
+    "published_md5": "0e251a5999782071cdc77fccdfab546d",
+    "original_size_bytes": 42654288,
+    "published_size_bytes": 21157105
+  }
+}

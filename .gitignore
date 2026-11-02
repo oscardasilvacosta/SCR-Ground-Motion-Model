@@ -47,3 +47,22 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Restricted inputs and generated record-level diagnostics
+data/private/
+private/
+outputs/*
+!outputs/.gitkeep
+training_database.csv
+updated_older_DB.xlsx
+original_split_membership.csv
+*SHAP_values.csv
+*validation_predictions.csv
+*record_inventory.csv
+*event_identity_crosswalk.csv
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+*.log

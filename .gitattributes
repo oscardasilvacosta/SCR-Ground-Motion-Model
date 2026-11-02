@@ -1,0 +1,11 @@
+*.R text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.cff text eol=lf
+*.csv -text whitespace=cr-at-eol
+*.json -text whitespace=cr-at-eol
+*.rds binary
+*.png binary
+*.xlsx binary
+config/R_sessionInfo.txt -whitespace

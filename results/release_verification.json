@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "date": "2026-11-02",
+  "source_workbook_preparation_matches_retained_table": true,
+  "fresh_evaluation_refit_max_prediction_error_pctg": 0,
+  "bootstrap": {
+    "SCR": {
+      "n_predictions": 1343,
+      "n_event_clusters": 305,
+      "bootstrap_replicates_per_scheme": 1000,
+      "max_interval_reproduction_error": 0
+    },
+    "mixed": {
+      "n_predictions": 2872,
+      "n_event_clusters": 524,
+      "bootstrap_replicates_per_scheme": 1000,
+      "max_interval_reproduction_error": 4.4408920985006262e-16
+    }
+  },
+  "training_data_published": false,
+  "full_MC50_and_permutation_refits_rerun_for_release": false,
+  "fresh_full_DB_refit_max_prediction_error_pctg": 0,
+  "municipal_scenario_prediction_checks": 8250,
+  "maximum_municipal_prediction_difference_pctg": 4.9737991503207013e-14,
+  "R_source_parse_checks_passed": true,
+  "public_content_checks_passed": true
+}

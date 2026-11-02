@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite this version of the research software and the associated manuscript when available."
+type: software
+title: "XGB2.9G: SCR Ground-Motion Model for RotD100 PGA"
+authors:
+  - family-names: "da Silva Costa"
+    given-names: "Óscar"
+version: "XGB2.9G-2026-11-02"
+date-released: 2026-11-02
+repository-code: "https://github.com/oscardasilvacosta/SCR-Ground-Motion-Model"
+url: "https://github.com/oscardasilvacosta/SCR-Ground-Motion-Model"
+license: MIT
+abstract: "Research implementation of XGB2.9G with separate Vs30 and epicentral-distance predictors. The source-code licence does not grant rights to redistribute third-party training or geospatial data."

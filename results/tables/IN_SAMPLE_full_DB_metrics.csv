@@ -1,0 +1,2 @@
+"n","R2_SSE","R2_Pearson_squared","MAE_pctg","RMSE_pctg","bias_pctg","n_nonpositive","minimum_prediction_pctg","scope"
+9579,0.999580529210317,0.999612514918158,0.0524289248311613,0.133924998915111,-0.00126710477978402,555,-0.0984625890851021,"FULL_DB"

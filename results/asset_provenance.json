@@ -1,0 +1,257 @@
+[
+  {
+    "path": "config/predictors.csv",
+    "sha256": "a9f6941456fa5782c17df7d2377040b9d5078fa92014173cc3c92f4e3af71bb2",
+    "source": "XGB2.9G_manuscript_package_20261020/tables/predictors.csv"
+  },
+  {
+    "path": "config/fixed_hyperparameters.csv",
+    "sha256": "179d9685456a053634ac6a7d106d9f67e8bf2d88c2d0443e4644fbeefba6a789",
+    "source": "XGB2.9G_manuscript_package_20261020/tables/fixed_hyperparameters.csv"
+  },
+  {
+    "path": "config/scenarios.csv",
+    "sha256": "25c39085b09e79747c0622fe403d4b0bce80c1d5356dfcccfd83e5d0fa8a4bd4",
+    "source": "XGB2.9G_manuscript_package_20261020/tables/scenario_definitions.csv"
+  },
+  {
+    "path": "models/XGB2.9G_FULL_DB_preprocessing.csv",
+    "sha256": "b472e77922ac779bfa6da9a17f2d8111797d10461695cf6e6d4166b14d433063",
+    "source": "XGB2.9G_manuscript_package_20261020/models/XGB2.9G_FULL_DB_preprocessing.csv"
+  },
+  {
+    "path": "models/XGB2.9G_EVALUATION_preprocessing.csv",
+    "sha256": "ae879183117d924a3ab2eeb0c0776bebe312d3e4ee24bd6e6eaf811f924b1a95",
+    "source": "XGB2.9G_manuscript_package_20261020/models/XGB2.9G_EVALUATION_preprocessing.csv"
+  },
+  {
+    "path": "data/sites/Lisbon_Vs30_prediction_grid.csv",
+    "sha256": "f9bb0a3f0edb67934989c8f0f9c08eb670eb296841fec57932502db6350046dd",
+    "source": "Retained original common grid restricted to saved municipal centre IDs"
+  },
+  {
+    "path": "data/sites/Lisbon_Vs30_prediction_grid.xlsx",
+    "sha256": "6a5b8f8db42770c5e29e64b6de94a4de5e896ce7f2dfb4c75ff3099eeaa9e044",
+    "source": "outputs/XGB29_Vs30_prediction_grid_20261102/Lisbon_Vs30_prediction_grid.xlsx"
+  },
+  {
+    "path": "data/sites/Original_full_scenario_grid.csv",
+    "sha256": "228df30bef03d6b0716421128310f9dfefa9f57e119eca8c0f7daa2ecd771b9c",
+    "source": "outputs/XGB29_Vs30_prediction_grid_20261102/example/Original_full_scenario_grid.csv"
+  },
+  {
+    "path": "examples/Scenario_A_complete_model_inputs.csv",
+    "sha256": "95874c4f75c6375933c072319d32425082ea7054e715716464e03d0a0fa37d4e",
+    "source": "outputs/XGB29_Vs30_prediction_grid_20261102/example/Scenario_A_complete_model_inputs.csv"
+  },
+  {
+    "path": "results/tables/SCR_validation_metrics.csv",
+    "sha256": "c72c344a29bb2a6638366f9484333503c9423dfb417bab1ef847ee3420cfafac",
+    "source": "XGB2.9G_manuscript_package_20261020/tables/EVALUATION_metrics.csv"
+  },
+  {
+    "path": "results/tables/IN_SAMPLE_full_DB_metrics.csv",
+    "sha256": "f6a638ce7ebf5920a6fe0beb3c0af8e4959e5c96919d5ead533d770a63ae93d8",
+    "source": "XGB2.9G_manuscript_package_20261020/tables/FULL_DB_metrics.csv"
+  },
+  {
+    "path": "results/tables/predictor_configuration_comparison.csv",
+    "sha256": "d207bb53e46f2de0a2d7e1ce748a53f8b3d94857a7633b134756752da7f281e2",
+    "source": "XGB2.9G_manuscript_package_20261020/tables/Table5_input_configuration_metrics.csv"
+  },
+  {
+    "path": "results/tables/SCR_holdout_predictor_importance.csv",
+    "sha256": "ee6e999857dc2528f6fc6ec8a5fd2e1063515307927812555c3609f14753413a",
+    "source": "XGB2.9G_manuscript_package_20261020/tables/EVALUATION_HOLDOUT_predictor_importance.csv"
+  },
+  {
+    "path": "results/tables/FULL_DB_predictor_importance.csv",
+    "sha256": "9bf1dc00b867ab54ea0e1d7e68a39af15ec574e1fd8233cb3e67532ce349a1ba",
+    "source": "XGB2.9G_manuscript_package_20261020/tables/FULL_DB_predictor_importance.csv"
+  },
+  {
+    "path": "results/tables/Spearman_training_database.csv",
+    "sha256": "e968878de537389b8e14bd76e2118eb842a823630d7fa95ff56f8ffd1345d0c0",
+    "source": "XGB2.9G_manuscript_package_20261020/tables/Figure11_Spearman_selected_inputs.csv"
+  },
+  {
+    "path": "results/tables/scenario_spatial_summaries.csv",
+    "sha256": "394515d089ca47e4e01a6637f877c9dd0f97857fec5590badd6d4f64500ed1fa",
+    "source": "XGB2.9G_manuscript_package_20261020/tables/PGA_spatial_summary_all_levels_and_scopes.csv"
+  },
+  {
+    "path": "results/tables/scenario_XGB_to_GMPE_ratios.csv",
+    "sha256": "64c9b8784406dc833888465ea536ae6596203efd78168832774bd465ede4e77e",
+    "source": "XGB2.9G_manuscript_package_20261020/tables/XGB29_GMPE_sitewise_ratios.csv"
+  },
+  {
+    "path": "results/tables/scenario_GMPE_P16_P84_position.csv",
+    "sha256": "b88e77f27398636ab2770d19112798491c776ba4037ca210fe99238257d23663",
+    "source": "XGB2.9G_manuscript_package_20261020/tables/XGB29_position_relative_to_GMPE_P16_P84.csv"
+  },
+  {
+    "path": "results/tables/local_contrast_summary.csv",
+    "sha256": "cc1bda0af8c0e9b79aec1895ad0f02de385b8b636cfeee08f0e1dcbfdf6f4791",
+    "source": "XGB2.9G_manuscript_package_20261020/tables/local_contrast_summary.csv"
+  },
+  {
+    "path": "results/tables/SCR_bootstrap_intervals.csv",
+    "sha256": "e641272be2c47e86f5e1d54152ff0917dc091c1c25820933ca17f48e9d6af21b",
+    "source": "XGB2.9G_manuscript_package_20261020/validation/bootstrap_95_percentile_intervals.csv"
+  },
+  {
+    "path": "results/tables/mixed_validation_metrics.csv",
+    "sha256": "56b802d1656a7a1b9f629cc75b26cd20f9e379a1250d466e5f932cb3911e330a",
+    "source": "XGB2.9G_manuscript_package_20261020/validation/mixed_recording_metrics.csv"
+  },
+  {
+    "path": "results/tables/permutation_20_metrics.csv",
+    "sha256": "add6147001f6dfbbdbdbcf5beae04011530cb7e672034b9aad589c1c5e11e858",
+    "source": "XGB2.9G_manuscript_package_20261020/validation/permutation_20_metrics.csv"
+  },
+  {
+    "path": "results/tables/real_recordings_station_predictions.csv",
+    "sha256": "5b782bf0acf4c777946db0a1ebe61775fa5b512c09508d0f4bccf3470cc8d102",
+    "source": "XGB2.9G_manuscript_package_20261020/real_event_comparison/station_predictions_XGB29_GMPEs.csv"
+  },
+  {
+    "path": "results/tables/SCR_and_mixed_bootstrap_intervals.csv",
+    "sha256": "f54f2b0087ae5bb5c4b57340896b85435776ef1b3a7931ae6c21bdfe7eee126b",
+    "source": "XGB2.9G_mixed_validation_bootstrap_20261022/SCR_and_mixed_bootstrap_comparison.csv"
+  },
+  {
+    "path": "results/tables/paired_MC50_summary.csv",
+    "sha256": "fca4e94eff298332603c5d17243df6d6fc0ed836e005b2027690554ca8513df4",
+    "source": "XGB2.9G_paired_eventwise_MC50_20261021/Table_S1_paired_protocol_summary.csv"
+  },
+  {
+    "path": "results/tables/paired_MC50_repetition_metrics.csv",
+    "sha256": "60bf141b0e33b4a909461330efc74f8d5a7547641f1d030b0a9544296a3c3692",
+    "source": "XGB2.9G_paired_eventwise_MC50_20261021/paired_repetition_metrics.csv"
+  },
+  {
+    "path": "results/tables/paired_MC50_event_overlap.csv",
+    "sha256": "280bdaf4dd79b5636660424076230ae8bc71d75fdd095c114c9e70c1d9269705",
+    "source": "XGB2.9G_paired_eventwise_MC50_20261021/event_overlap_audit.csv"
+  },
+  {
+    "path": "results/tables/real_recordings_available_and_common_subset_metrics.csv",
+    "sha256": "41e4dc1f6825393ed684771eba2435c6f4d6afd8562979bb3df8383f049386e7",
+    "source": "outputs/Figure_20_all_available_20261024/all_available_and_common_nine_metrics.csv"
+  },
+  {
+    "path": "results/scenarios/A_Lisbon_centres_XGB29_GMPE_levels.csv",
+    "sha256": "d898ad1799d623f3070e0278b349b951d2340805f511fcd2f5ed36eb318081f4",
+    "source": "XGB2.9G_manuscript_package_20261020/arcgis_predictions/A_Lisbon_centres_XGB29_GMPE_levels.csv"
+  },
+  {
+    "path": "results/scenarios/C_Lisbon_centres_XGB29_GMPE_levels.csv",
+    "sha256": "ed295add5aee1b17009c9ca06d63bcbb9f67d69b064b34ce48165ec2e1588f1b",
+    "source": "XGB2.9G_manuscript_package_20261020/arcgis_predictions/C_Lisbon_centres_XGB29_GMPE_levels.csv"
+  },
+  {
+    "path": "results/scenarios/E_Lisbon_centres_XGB29_GMPE_levels.csv",
+    "sha256": "18a3d8cf6ff2d09934df7266794832ae065e01308bb6a92d1ecc3b10ba9558f1",
+    "source": "XGB2.9G_manuscript_package_20261020/arcgis_predictions/E_Lisbon_centres_XGB29_GMPE_levels.csv"
+  },
+  {
+    "path": "results/scenarios/F_Lisbon_centres_XGB29_GMPE_levels.csv",
+    "sha256": "b9ed8b0315c175dd000f7b0326656fb6520961ca0edf3d2c520996e642984ad1",
+    "source": "XGB2.9G_manuscript_package_20261020/arcgis_predictions/F_Lisbon_centres_XGB29_GMPE_levels.csv"
+  },
+  {
+    "path": "results/scenarios/G_Lisbon_centres_XGB29_GMPE_levels.csv",
+    "sha256": "dc9d1435184e6fc4bfc4d58d7a64f1a517da8113b483cef320515c118514303c",
+    "source": "XGB2.9G_manuscript_package_20261020/arcgis_predictions/G_Lisbon_centres_XGB29_GMPE_levels.csv"
+  },
+  {
+    "path": "results/scenarios/H_Lisbon_centres_XGB29_GMPE_levels.csv",
+    "sha256": "bcd0838cf65c0c675408339979af688f935c52278a6044c82083d91fb7bcf014",
+    "source": "XGB2.9G_manuscript_package_20261020/arcgis_predictions/H_Lisbon_centres_XGB29_GMPE_levels.csv"
+  },
+  {
+    "path": "results/figures/fig_XGB2.9G_EVALUATION_HOLDOUT_SHAP_summary.png",
+    "sha256": "85c7f7237804a121035f671c167ce47bc6092561f7631a9270c5c80911d26ec3",
+    "source": "XGB2.9G_manuscript_package_20261020/figures_png/fig_XGB2.9G_EVALUATION_HOLDOUT_SHAP_summary.png"
+  },
+  {
+    "path": "results/figures/fig_XGB2.9G_FULL_DB_SHAP_summary.png",
+    "sha256": "0bff8fbd297c58fd552782144ba075a3f9db49692066a4779df79fd730d0d11c",
+    "source": "XGB2.9G_manuscript_package_20261020/previews/fig_XGB2.9G_FULL_DB_SHAP_summary.png"
+  },
+  {
+    "path": "results/figures/fig_XGB2.9G_observed_vs_predicted_evaluation.png",
+    "sha256": "c65ad61ad1c3d0d7ec171e3e35aa29de7960e1014a2c1af5f333944a23ef8418",
+    "source": "XGB2.9G_manuscript_package_20261020/previews/fig_XGB2.9G_observed_vs_predicted_evaluation.png"
+  },
+  {
+    "path": "results/figures/Figure_13_XGB2.9G_six_scenario_Lisbon_maps.png",
+    "sha256": "94b02126930ae2b6b68df134aaeef9cebc82ce092405cd8d6653b550b097383f",
+    "source": "XGB2.9G_manuscript_package_20261020/figures_png/Figure_13_XGB2.9G_six_scenario_Lisbon_maps.png"
+  },
+  {
+    "path": "results/figures/fig_XGB_to_GMPE_ratios_surface.png",
+    "sha256": "3548df6ec6029728aa8f01c1c3e6d0a83923c4f2f5b226ba21ecee940a27be8c",
+    "source": "XGB2.9G_manuscript_package_20261020/previews/fig_XGB_to_GMPE_ratios_surface.png"
+  },
+  {
+    "path": "results/figures/fig_XGB_to_GMPE_CENT_ratios_surface.png",
+    "sha256": "40bbc91ae1b9544fe3629a94550b16b1cdbe4f6865c200068e0f8d9f08b8b2ce",
+    "source": "XGB2.9G_manuscript_package_20261020/figures_png/fig_XGB_to_GMPE_CENT_ratios_surface.png"
+  },
+  {
+    "path": "results/figures/fig_XGB_to_GMPE_P16_ratios_surface.png",
+    "sha256": "79b4a5c5bbe13dee3f6d204c0a913915952044d6d48ae8e9a84e38e442caf01a",
+    "source": "XGB2.9G_manuscript_package_20261020/previews/fig_XGB_to_GMPE_P16_ratios_surface.png"
+  },
+  {
+    "path": "results/figures/fig_XGB_to_GMPE_P84_ratios_surface.png",
+    "sha256": "ed46f7469c6bdfc0503003c0af8ae22010c9a58758d86dde33cc5675e2a680e0",
+    "source": "XGB2.9G_manuscript_package_20261020/previews/fig_XGB_to_GMPE_P84_ratios_surface.png"
+  },
+  {
+    "path": "results/figures/fig_local_contrast_overview_Lisbon_pairs_only.png",
+    "sha256": "68acbf938814039bd98762dc5d2c113764f7d09865a39bb3292624bfe3d03d6d",
+    "source": "XGB2.9G_manuscript_package_20261020/previews/fig_local_contrast_overview_Lisbon_pairs_only.png"
+  },
+  {
+    "path": "results/figures/combined_P16_P50_P84_Lisbon_boxplots.png",
+    "sha256": "5a64075a5e8f248d16c9312793915b80c303551fb3e854bb06e56d4e3b1a5422",
+    "source": "outputs/XGB29_combined_quantile_boxplots_20261023/fig_combined_XGB29_GMPE_P16_P50_P84_Lisbon_labelled.png"
+  },
+  {
+    "path": "results/figures/real_recordings_all_available.png",
+    "sha256": "bbcf9b419078799bd07689566b5d024cd8ce6bdcb4f9479f67aa81d2beb663bf",
+    "source": "tmp/XGB29_GitHub_verification_20261102/station_plot/real_recordings_all_available.png"
+  },
+  {
+    "path": "results/figures/XGB2.9G_selection_workflow.png",
+    "sha256": "93d24e2215448ed393ce9943d30aff31c730edf3bd8628a7cad4fa61042386f3",
+    "source": "outputs/Figure_2_XGB2.9G_selection_workflow_20261021/Figure_2_XGB2.9G_selection.png"
+  },
+  {
+    "path": "results/figures/empirical_magnitude_distance_trends_with_support.png",
+    "sha256": "16ce37622321cd1bc406d9de1bbaab510796f33290ba479419e93c3d120eeb45",
+    "source": "Accepted manuscript Figure S2, lossless TIFF-to-PNG conversion"
+  },
+  {
+    "path": "results/tables/bin_counts.csv",
+    "sha256": "5ed5ea03dfe723fa7db60258229516063fb5ee18f340b87a01d9bb3bbfd13e12",
+    "source": "XGB2.9G_reviewer10_scaling_response_20261026/support_aware_20261027/tables/bin_counts.csv"
+  },
+  {
+    "path": "results/tables/binned_means_event_cluster_bootstrap.csv",
+    "sha256": "6c41762a36967a028a233ae02cea820b43b408645f6937b46781bd1806f0b0e5",
+    "source": "XGB2.9G_reviewer10_scaling_response_20261026/support_aware_20261027/tables/binned_means_event_cluster_bootstrap.csv"
+  },
+  {
+    "path": "results/tables/training_support_limits.csv",
+    "sha256": "016530a7e5da9a93f58cb235fed1bc6f606bd5be37f0b2798061a14f8fcd46f3",
+    "source": "XGB2.9G_reviewer10_scaling_response_20261026/support_aware_20261027/tables/training_support_limits.csv"
+  },
+  {
+    "path": "results/tables/predefined_support_sensitivity_metrics.csv",
+    "sha256": "cffca5e11c90c138f7b2fc421f4c5c7a9fe114ba193879fb2e6154df0d69d13c",
+    "source": "XGB2.9G_reviewer10_scaling_response_20261026/support_aware_20261027/tables/predefined_support_sensitivity_metrics.csv"
+  }
+]
